@@ -8,7 +8,8 @@
 		"start": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
-		"format": "prettier . -w"
+		"format": "prettier . -w",
+		"eslint": "eslint ."
 	},
 	"dependencies": {
 		"@astrojs/tailwind": "^3.0.1",
