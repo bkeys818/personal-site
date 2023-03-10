@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string
+  date: Date
+  description: string
+  tag: string
+  image: string
+  imageAlt: string
+}
+
+const {
+  title = 'My Title',
+  date = new Date(),
+  description = 'Ea ut ex quis ullamco do culpa sint consectetur magna tempor mollit dolore sint. Adipisicing ullamco elit aliquip sunt in tempor qui incididunt elit Lorem eiusmod est ipsum sunt. Ut culpa ex quis labore irure duis ea aute magna irure culpa enim.',
+  tag = 'My Tag',
+  image = 'https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg',
+  imageAlt = 'alt descriptoin',
+} = Astro.props
+---
+
+<article class="shadow-md h-min">
+  <img src={image} alt={imageAlt} class="w-full h-[240px] object-cover" />
+  <div class="m-2">
+    <p>
+      {tag}
+      <span class="vertical-divider">|</span>
+      {date.toLocaleDateString()}
+    </p>
+    <h1>{title}</h1>
+    <p>{description}</p>
+  </div>
+  </article>

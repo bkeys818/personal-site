@@ -1,0 +1,13 @@
+---
+interface Props {
+  title?: string
+}
+const { title } = Astro.props
+---
+
+<section class="page-width">
+  {title ?? <h2>{title}</h2>}
+  <div class="grid gap-8 px-2 min-[672px]:grid-cols-2">
+    <slot />
+  </div>
+</section>

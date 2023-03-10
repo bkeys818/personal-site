@@ -9,4 +9,8 @@
   .modal {
     @apply invisible fixed left-0 top-0 z-50 h-full w-full overflow-auto opacity-0 transition-opacity duration-200 target:visible target:opacity-100;
   }
+  span.vertical-divider {
+    @apply px-1;
+    font-size: calc(1em + 2px);
+  }
 }
