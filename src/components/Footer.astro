@@ -1,0 +1,11 @@
+---
+import { socials } from './Header.astro'
+---
+
+<footer class="mt-auto py-16 text-center">
+  <div class="flex items-center justify-center gap-4 pb-10">
+    {socials.map(social => <p>{social}</p>)}
+  </div>
+  <p>Ben Keys - Personal Site</p>
+  <p>Copyright © 2023 Ben Keys. All rights reserved.</p>
+</footer>
