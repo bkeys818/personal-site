@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .page-width {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
   .modal {
     @apply invisible fixed left-0 top-0 z-50 h-full w-full overflow-auto opacity-0 transition-opacity duration-200 target:visible target:opacity-100;
   }
