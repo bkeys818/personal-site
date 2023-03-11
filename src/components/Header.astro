@@ -1,10 +1,5 @@
 ---
-const links = [
-  { name: 'Portfolio', href: '/portfolio' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Projects', href: '/projects' },
-]
-export const socials = ['GH', 'LI', 'MAIL']
+import { menu, socials } from '../links.json'
 ---
 
 <header class="bg-slate-500">
@@ -13,7 +8,7 @@ export const socials = ['GH', 'LI', 'MAIL']
     <nav class="hidden sm:block">
       <ul class="flex gap-6">
         {
-          links.map(link => (
+          menu.map(link => (
             <li>
               <a href={link.href}>{link.name}</a>
             </li>
@@ -22,7 +17,7 @@ export const socials = ['GH', 'LI', 'MAIL']
       </ul>
     </nav>
     <div class="hidden gap-4 sm:flex">
-      {socials.map(social => <a href=".">{social}</a>)}
+      {socials.map(social => <a href={social.href}>{social.logo}</a>)}
     </div>
     <a class="sm:hidden" href="#header-modal">MENU</a>
   </div>
@@ -33,9 +28,9 @@ export const socials = ['GH', 'LI', 'MAIL']
   <nav class="grow text-center">
     <ul>
       {
-        links.map(link => (
+        socials.map(social => (
           <li>
-            <a href={link.href}>{link.name}</a>
+            <a href={social.href}>{social.logo}</a>
           </li>
         ))
       }

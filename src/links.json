@@ -1,0 +1,12 @@
+{
+  "menu": [
+    { "name": "Portfolio", "href": "/portfolio" },
+    { "name": "Blog", "href": "/blog" },
+    { "name": "Projects", "href": "/projects" }
+  ],
+  "socials": [
+    { "logo": "GH", "href": "https://github.com/bkeys818" },
+    { "logo": "LI", "href": "https://www.linkedin.com/in/bkeys818/" },
+    { "logo": "MAIL", "href": "mailto:bkeys818@gmail.com" }
+  ]
+}
