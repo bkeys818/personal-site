@@ -5,8 +5,14 @@ interface Props {
 const { title } = Astro.props
 ---
 
-<section class="page-width">
-  {title ?? <h2>{title}</h2>}
+<section class="page-width my-6">
+  {
+    typeof title == 'string' ? (
+      <div class="my-8">
+        <h1>{title}</h1>
+      </div>
+    ) : null
+  }
   <div class="grid gap-8 px-2 min-[672px]:grid-cols-2">
     <slot />
   </div>

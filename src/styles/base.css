@@ -2,9 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* Typography */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  h1 {
+    @apply pb-6 text-center text-5xl font-medium text-primary;
+  }
+  h2 {
+    @apply pb-6 text-center text-4xl font-bold text-primary;
+  }
+  h4 {
+    @apply pb-4 text-2xl font-bold text-primary;
+  }
+  h5 {
+    @apply pb-2 text-center text-base text-primary;
+  }
+  p {
+    @apply pb-2 text-base text-secondary;
+  }
+  h6 {
+    @apply pb-2 text-sm font-bold text-primary;
+  }
+}
+
 @layer components {
   .page-width {
-    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply mx-auto max-w-5xl px-4 sm:px-6 lg:px-8;
   }
   .modal {
     @apply invisible fixed left-0 top-0 z-50 h-full w-full overflow-auto opacity-0 transition-opacity duration-200 target:visible target:opacity-100;

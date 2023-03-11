@@ -3,14 +3,14 @@ import { menu, socials } from '../links.json'
 ---
 
 <header class="bg-slate-500">
-  <div class="page-width py-4 flex items-center justify-between">
-    <p class="text-2xl font-bold">Ben Keys</p>
+  <div class="page-width flex items-center justify-between py-4">
+    <h4 class="text-primary py-0">Ben Keys</h4>
     <nav class="hidden sm:block">
       <ul class="flex gap-6">
         {
           menu.map(link => (
             <li>
-              <a href={link.href}>{link.name}</a>
+              <a href={link.href}>{link.name.toUpperCase()}</a>
             </li>
           ))
         }
@@ -23,6 +23,7 @@ import { menu, socials } from '../links.json'
   </div>
 </header>
 <div class="modal flex flex-col gap-8 bg-white p-6" id="header-modal">
+  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
   <a href="#" class="ml-auto">&#x2715</a>
   <a href="/" class="text-center text-4xl font-light">Ben Keys</a>
   <nav class="grow text-center">
