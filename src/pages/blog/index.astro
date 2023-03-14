@@ -1,11 +1,11 @@
 ---
-import Page from 'layouts/Page.astro'
+import Layout from 'layouts/Layout.astro'
 import CardGrid from 'components/CardGrid.astro'
 import Card from 'components/Card.astro'
 ---
 
-<Page title="Ben Keys">
+<Layout title="Ben Keys">
   <CardGrid title="Blog Posts">
     {Array(10).fill({}).map(() => <Card />)}
   </CardGrid>
-</Page>
+</Layout>
