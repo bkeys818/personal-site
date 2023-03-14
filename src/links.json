@@ -5,8 +5,8 @@
     { "name": "Projects", "href": "/projects" }
   ],
   "socials": [
-    { "logo": "GH", "href": "https://github.com/bkeys818" },
-    { "logo": "LI", "href": "https://www.linkedin.com/in/bkeys818/" },
-    { "logo": "MAIL", "href": "mailto:bkeys818@gmail.com" }
+    { "src": "/icons/mail.svg", "href": "mailto:bkeys818@gmail.com", "alt":"mail logo"  },
+    { "src": "/icons/github.svg", "href": "https://github.com/bkeys818", "alt": "github logo" },
+    { "src": "/icons/linkedin.svg", "href": "https://www.linkedin.com/in/bkeys818/", "alt": "linkedin logo" }
   ]
 }

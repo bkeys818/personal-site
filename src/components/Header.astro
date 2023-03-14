@@ -4,7 +4,7 @@ import { menu, socials } from '../links.json'
 
 <header class="bg-slate-500">
   <div class="page-width flex items-center justify-between py-4">
-    <h4 class="text-primary py-0">Ben Keys</h4>
+    <h4 class="py-0 text-black">Ben Keys</h4>
     <nav class="hidden sm:block">
       <ul class="flex gap-6">
         {
@@ -17,7 +17,13 @@ import { menu, socials } from '../links.json'
       </ul>
     </nav>
     <div class="hidden gap-4 sm:flex">
-      {socials.map(social => <a href={social.href}>{social.logo}</a>)}
+      {
+        socials.map(({ src, href, alt }) => (
+          <a href={href}>
+            <img class="icon" src={src} alt={alt} />
+          </a>
+        ))
+      }
     </div>
     <a class="sm:hidden" href="#header-modal">MENU</a>
   </div>
@@ -29,15 +35,21 @@ import { menu, socials } from '../links.json'
   <nav class="grow text-center">
     <ul>
       {
-        socials.map(social => (
+        menu.map(link => (
           <li>
-            <a href={social.href}>{social.logo}</a>
+            <a href={link.href}>{link.name.toUpperCase()}</a>
           </li>
         ))
       }
     </ul>
   </nav>
   <div class="flex justify-center gap-4">
-    {socials.map(social => <a href=".">{social}</a>)}
+    {
+      socials.map(({ src, href, alt }) => (
+        <a href={href}>
+          <img class="icon" src={src} alt={alt} />
+        </a>
+      ))
+    }
   </div>
 </div>
