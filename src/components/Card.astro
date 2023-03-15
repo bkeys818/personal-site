@@ -3,27 +3,37 @@ interface Props {
   title: string
   date?: Date
   desc?: string
-  tag?: string
+  tags?: string[]
+  href: string
   imgSrc?: string
   imgAlt?: string
 }
 
-const { title, desc, date, tag, imgSrc, imgAlt } = Astro.props
+const { title, desc, date, tags, href, imgSrc, imgAlt } = Astro.props
+const includeTag = tags ? tags.length > 0 : false
 ---
 
-<article class="h-min shadow-md">
-  <img src={imgSrc} alt={imgAlt} class="h-[240px] w-full object-cover" />
-  <div class="m-2">
-    {
-      (tag || date) && (
-        <h6>
-          {tag && tag}
-          {tag && date && <span class="vertical-divider">|</span>}
-          {date && date.toLocaleDateString()}
-        </h6>
-      )
-    }
-    <h4>{title}</h4>
-    {desc && <p>{desc}</p>}
-  </div>
+<article class="col-span-12 sm:col-span-6 lg:col-span-4 shadow-md">
+  <a href={href}>
+    <div class="relative overflow-hidden pt-[60%]">
+      <img
+        src={imgSrc}
+        alt={imgAlt}
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      />
+    </div>
+    <div class="p-2">
+      {
+        (includeTag || date) && (
+          <h6>
+            {includeTag && tags!.join()}
+            {includeTag && date && <span class="vertical-divider">|</span>}
+            {date && date.toLocaleDateString()}
+          </h6>
+        )
+      }
+      <h4>{title}</h4>
+      {desc && <p>{desc}</p>}
+    </div>
+  </a>
 </article>

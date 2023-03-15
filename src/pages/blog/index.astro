@@ -9,10 +9,8 @@ const posts = await getCollection('blog')
 ---
 
 <Layout title="Ben Keys">
-  <CardGrid title="Blog Posts">
-    {posts.map(post => (<a href={'./blog/' + post.slug} >
-      <Card {...post.data} />
-    </a>)
-    )}
+  <h1 class="my-6">Blog Posts</h1>
+  <CardGrid>
+    {posts.map(post => <Card {...post.data} href={'./blog/' + post.slug} />)}
   </CardGrid>
 </Layout>
