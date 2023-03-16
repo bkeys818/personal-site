@@ -13,7 +13,7 @@ const { title, desc, date, tags, href, imgSrc, imgAlt } = Astro.props
 const includeTag = tags ? tags.length > 0 : false
 ---
 
-<article class="col-span-12 sm:col-span-6 lg:col-span-4 shadow-md">
+<div class="col-span-12 sm:col-span-6 lg:col-span-4 shadow-md">
   <a href={href}>
     <div class="relative overflow-hidden pt-[60%]">
       <img
@@ -25,15 +25,15 @@ const includeTag = tags ? tags.length > 0 : false
     <div class="p-2">
       {
         (includeTag || date) && (
-          <h6>
+          <h4>
             {includeTag && tags!.join()}
             {includeTag && date && <span class="vertical-divider">|</span>}
             {date && date.toLocaleDateString()}
-          </h6>
+          </h4>
         )
       }
-      <h4>{title}</h4>
+      <h3>{title}</h3>
       {desc && <p>{desc}</p>}
     </div>
   </a>
-</article>
+</div>
