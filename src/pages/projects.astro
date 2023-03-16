@@ -2,18 +2,13 @@
 import Layout from '@layouts/Layout.astro'
 import CardGrid from '@components/CardGrid.astro'
 import Card from '@components/Card.astro'
+
+import projects from '@data/projects.json'
 ---
 
 <Layout title="Ben Keys">
   <h1 class="my-6">Personal Projects</h1>
   <CardGrid>
-    <Card
-      title="Spotify Tools"
-      desc="A website with several tools to use alongside Spotify."
-      href="https://spotify-tools.ben-keys.com"
-      imgSrc="images/spotify_logo.jpg"
-      imgAlt="Spotify Logo"
-    >
-    </Card>
+    {projects.map(project => <Card {...project} />)}
   </CardGrid>
 </Layout>
