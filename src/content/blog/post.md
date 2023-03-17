@@ -1,5 +1,5 @@
 ---
-layout: '@layouts/Layout.astro'
+layout: '@layouts/BlogPost.astro'
 title: Blog Post
 desc: Proident veniam eu minim exercitation. Excepteur anim ut veniam aliqua irure nisi esse qui commodo consequat ullamco est non. Esse ipsum cillum Lorem id cillum enim aute commodo proident deserunt aliqua cupidatat dolor elit.
 date: 2001-12-05
