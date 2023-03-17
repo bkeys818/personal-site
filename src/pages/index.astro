@@ -1,5 +1,58 @@
 ---
 import Layout from '@layouts/Layout.astro'
+
+import { about, projects, hardSkills, sortSkills } from '@data/portfolio.json'
 ---
 
-<Layout title="Ben Keys - Portfolio" />
+<Layout title="Ben Keys - Portfolio">
+  <div class="content text-center">
+    <h1>Hi, I'm Ben Keys</h1>
+
+    <p class="text-lg">{about}</p>
+
+    <h2>Projects</h2>
+    <div class="flex flex-wrap justify-center gap-x-4 gap-y-3">
+      {
+        projects.map(({ username, repo }) => (
+          <a class="hover:scale-[102%] ease-in-out duration-100" href={`https://github.com/${username}/${repo}`}>
+            <img
+              src={`https://github-readme-stats.vercel.app/api/pin?username=${username}&repo=${repo}&text_color=5E5E5E`}
+              alt="Repository Card"
+              height="150"
+              width="400"
+            />
+          </a>
+        ))
+      }
+    </div>
+
+    <h2>Hard Skills</h2>
+    {
+      hardSkills.map(({ title, icons }) => (
+        <>
+          <h3>{title.toUpperCase()}</h3>
+          <div class="flex flex-wrap justify-center gap-x-3 gap-y-2">
+            {icons.map(({ title, href, slug }) => (
+              <a title={title} href={href} class="p-1 hover:scale-105 ease-in-out duration-100">
+                <img
+                  height="48"
+                  width="48"
+                  src={`https://cdn.simpleicons.org/${slug}`}
+                  alt={slug + ' icon'}
+                />
+              </a>
+            ))}
+          </div>
+        </>
+      ))
+    }
+
+    <h2>Soft Skills</h2>
+    {sortSkills.map(({ title, desc }) =>
+      <>
+        <h3>{title}</h3>
+        <p class="text-lg max-w-2xl mx-auto">{desc}</p>
+      </>
+    )}
+  </div>
+</Layout>

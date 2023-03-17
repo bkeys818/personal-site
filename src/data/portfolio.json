@@ -1,0 +1,66 @@
+{
+  "about": "Nulla ullamco sint mollit nisi quis cillum deserunt et commodo. Tempor laboris duis amet ipsum nulla sit cupidatat duis. Proident ea sit magna consequat reprehenderit. Officia irure nostrud id officia dolore culpa dolor est in id nisi. Magna ut dolore aliquip nulla tempor fugiat occaecat nisi amet. Lorem fugiat esse eiusmod ex mollit incididunt irure labore laborum.",
+  "projects": [
+    { "username": "bkeys818", "repo": "spotify-tools" },
+    { "username": "bkeys818", "repo": "CardCarousel" },
+    { "username": "bkeys818", "repo": "shopify-template-schema" },
+    { "username": "bkeys818", "repo": "personal-site" }
+  ],
+  "hardSkills": [
+    {
+      "title": "languages",
+      "icons": [
+        { "title": "Swift", "slug": "swift", "href": "https://www.swift.org" },
+        { "title": "Javascript", "slug": "javascript", "href": "https://developer.oracle.com/languages/javascript.html" },
+        { "title": "TypeScript", "slug": "typescript", "href": "https://www.typescriptlang.org" },
+        { "title": "HTML5", "slug": "html5", "href": "https://html.spec.whatwg.org/multipage/" },
+        { "title": "CSS3", "slug": "css3", "href": "https://www.w3.org/style/css/overview" },
+        { "title": "Bash", "slug": "gnubash", "href": "https://www.gnu.org/software/bash/" }
+      ]
+    },
+    {
+      "title": "frameworks",
+      "icons": [
+        { "title": "Node.js", "slug": "nodedotjs", "href": "https://nodejs.org" },
+        { "title": "Firebase", "slug": "firebase", "href": "https://firebase.google.com" },
+        { "title": "Astro", "slug": "astro", "href": "https://astro.build" },
+        { "title": "Svelte", "slug": "svelte", "href": "https://svelte.dev" },
+        { "title": "React", "slug": "react", "href": "https://react.dev" }
+      ]
+    },
+    {
+      "title": "tools",
+      "icons": [
+        { "title": "Git", "slug": "git", "href": "https://git-scm.com" },
+        { "title": "Jest", "slug": "jest", "href": "https://jestjs.io" },
+        { "title": "Prettier", "slug": "prettier", "href": "https://prettier.io" },
+        { "title": "EsLint", "slug": "eslint", "href": "https://eslint.org" },
+        { "title": "Sass", "slug": "sass", "href": "https://sass-lang.com" },
+        { "title": "TailwindCSS", "slug": "tailwindcss", "href": "https://tailwindcss.com" },
+        { "title": "PostCSS", "slug": "postcss", "href": "https://postcss.org" }
+      ]
+    }
+  ],
+  "sortSkills": [
+    {
+      "title": "Enthusiastic & Tenacious",
+      "desc": "Officia commodo cillum elit id nulla ex. Veniam excepteur qui ea ea consequat tempor velit et ad. Duis mollit exercitation nostrud adipisicing incididunt magna. Nisi irure fugiat excepteur cillum. Nisi ullamco mollit non ad minim nisi commodo ullamco incididunt do minim consequat ut nostrud. Eiusmod adipisicing amet sunt dolore occaecat."
+    },
+    {
+      "title": "Quick learner & adaptable",
+      "desc": "Voluptate laborum occaecat id in ullamco qui. Tempor sint non consectetur proident do esse et. Cillum exercitation dolor reprehenderit reprehenderit excepteur elit do eiusmod qui quis culpa pariatur. Commodo ipsum occaecat velit esse velit dolore minim irure qui sint exercitation."
+    },
+    {
+      "title": "STEM Oriented",
+      "desc": "Reprehenderit enim nulla in consectetur ut irure sunt adipisicing eiusmod anim eiusmod. Amet Lorem dolore fugiat dolore magna occaecat dolore qui in. Reprehenderit laboris deserunt sunt ea laborum ut elit dolor veniam dolore laborum ullamco."
+    },
+    {
+      "title": "Passionate & Diligent",
+      "desc": "Ut anim veniam culpa deserunt. Ut voluptate aliquip culpa laboris voluptate consequat. Mollit est amet velit dolore laboris reprehenderit."
+    },
+    {
+      "title": "People person & outgoing",
+      "desc": "Sit minim dolor ipsum aute id velit sint. Nulla ut eu occaecat dolor ipsum in ut ea. Aute dolore dolor esse proident tempor proident enim cillum labore irure ullamco velit laboris. Incididunt non do exercitation mollit adipisicing ut dolor amet elit ad est cupidatat cupidatat. Duis duis mollit do dolor mollit anim magna labore ex."
+    }
+  ]
+}

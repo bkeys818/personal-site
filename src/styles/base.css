@@ -64,3 +64,14 @@ body {
     @apply inline-block w-6 h-6;
   }
 }
+
+@layer utilities {
+  .content {
+    &>* {
+      @apply mt-5;
+    }
+    p {
+      @apply max-w-2xl mx-auto;
+    }
+  }
+}
