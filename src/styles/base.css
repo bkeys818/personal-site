@@ -2,50 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-primary text-primary;
-}
-
 @layer base {
-  body {
-    @apply bg-primary text-primary;
-  }
-
-  article * {
-    @apply mt-5
-  }
-
-  /* Typography */
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
   body {
+    @apply bg-primary text-primary;
     font-family: 'Poppins', sans-serif;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    /* @apply leading-snug; */
-    @apply font-medium
-  }
-  h1 {
-    @apply text-5xl text-center;
-  }
-  h2 {
-    @apply text-3xl;
-  }
-  h3 {
-    @apply text-2xl;
-  }
-  h4 {
-    @apply text-base text-secondary font-semibold;
-  }
-  p {
-    @apply text-secondary leading-relaxed;
-  }
-  article {
-    h1 {
-      @apply font-extrabold;
-    }
-    h2, h3 {
-      @apply font-semibold
-    }
   }
 }
 
@@ -61,17 +22,69 @@ body {
     font-size: calc(1em + 2px);
   }
   .icon {
-    @apply inline-block w-6 h-6;
+    @apply inline-block h-6 w-6;
   }
 }
 
 @layer utilities {
-  .content {
-    &>* {
-      @apply mt-5;
+  /* Typography */
+  h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+    @apply font-medium;
+  }
+  h1,
+  .h1 {
+    @apply text-center text-5xl;
+  }
+  h2,
+  .h2 {
+    @apply text-4xl;
+  }
+  h3,
+  .h3 {
+    @apply text-2xl;
+  }
+  h4,
+  .h4 {
+    @apply text-xl;
+  }
+  h5,
+  .h5 {
+    @apply text-base font-semibold text-secondary;
+  }
+  p {
+    @apply leading-relaxed;
+  }
+  article {
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+      @apply font-semibold;
     }
-    p {
-      @apply max-w-2xl mx-auto;
+  }
+  article, .content {
+    & p {
+      @apply text-secondary;
     }
+  }
+
+  /** spacing **/
+  article, main > .content { @apply mt-14 }
+  section { @apply mt-14 }
+  article, .content, section {
+    & *:first-child { @apply mt-0; }
+    & > * + *:not(section, h1,h2,h3,h4,h5) { @apply mt-4; }
+  }
+
+
+  h1 { @apply mt-10 }
+  h2 { @apply mt-10 }
+  h3 { @apply mt-6 }
+  h4 { @apply mt-4 }
+  h5 { @apply mt-2 }
+  h1, h2, h3, h4,h5 {
+    &:first-child { @apply mt-0; }
   }
 }
