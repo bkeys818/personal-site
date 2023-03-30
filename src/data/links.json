@@ -1,6 +1,6 @@
 {
   "menu": [
-    { "name": "Portfolio", "href": "/portfolio" },
+    { "name": "Portfolio", "href": "/" },
     { "name": "Blog", "href": "/blog" },
     { "name": "Projects", "href": "/projects" }
   ],
