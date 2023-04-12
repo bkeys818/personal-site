@@ -1,0 +1,17 @@
+---
+import { socials } from '@data/links.json'
+---
+
+<footer class="page-width mt-auto py-16 text-center">
+  <div class="flex items-center justify-center gap-4 pb-10">
+    {
+      socials.map(({ src, href, alt }) => (
+        <a href={href}>
+          <img class="icon" src={src} alt={alt} />
+        </a>
+      ))
+    }
+  </div>
+  <h4>Ben Keys - Personal Site</h4>
+  <p>Copyright © 2023 Ben Keys. All rights reserved.</p>
+</footer>

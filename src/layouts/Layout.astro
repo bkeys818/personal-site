@@ -1,5 +1,9 @@
 ---
-import 'styles/base.css'
+import Header from '@components/Header.astro'
+import Footer from '@components/Footer.astro'
+
+import '@styles/base.css'
+
 export interface Props {
   title: string
 }
@@ -16,7 +20,11 @@ const { title } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
-    <slot />
+  <body class="flex min-h-screen flex-col" >
+    <Header />
+    <main class="page-width">
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>

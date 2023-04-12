@@ -1,0 +1,14 @@
+---
+import Layout from '@layouts/Layout.astro'
+import CardGrid from '@components/CardGrid.astro'
+import Card from '@components/Card.astro'
+
+import projects from '@data/projects.json'
+---
+
+<Layout title="Ben Keys">
+  <h1 class="my-6 text-center">Personal Projects</h1>
+  <CardGrid>
+    {projects.map(project => <Card {...project} />)}
+  </CardGrid>
+</Layout>

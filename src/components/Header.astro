@@ -1,0 +1,55 @@
+---
+import { menu, socials } from '@data/links.json'
+---
+
+<header class="shadow-md">
+  <div class="page-width flex items-center justify-between py-4">
+    <p class="h4 py-0">Ben Keys</p>
+    <nav class="hidden sm:block">
+      <ul class="flex gap-6">
+        {
+          menu.map(link => (
+            <li>
+              <a href={link.href}>{link.name.toUpperCase()}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <div class="hidden gap-4 sm:flex">
+      {
+        socials.map(({ src, href, alt }) => (
+          <a href={href}>
+            <img class="icon" src={src} alt={alt} />
+          </a>
+        ))
+      }
+    </div>
+    <a class="sm:hidden" href="#header-modal">MENU</a>
+  </div>
+</header>
+<div class="modal flex flex-col gap-8 bg-primary p-6" id="header-modal">
+  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+  <a href="#" class="ml-auto">&#x2715</a>
+  <a href="/" class="text-center text-4xl font-light">Ben Keys</a>
+  <nav class="grow text-center">
+    <ul>
+      {
+        menu.map(link => (
+          <li>
+            <a href={link.href}>{link.name.toUpperCase()}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+  <div class="flex justify-center gap-4">
+    {
+      socials.map(({ src, href, alt }) => (
+        <a href={href}>
+          <img class="icon" src={src} alt={alt} />
+        </a>
+      ))
+    }
+  </div>
+</div>

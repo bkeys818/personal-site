@@ -1,0 +1,98 @@
+{
+  "about": "Nulla ullamco sint mollit nisi quis cillum deserunt et commodo. Tempor laboris duis amet ipsum nulla sit cupidatat duis. Proident ea sit magna consequat reprehenderit. Officia irure nostrud id officia dolore culpa dolor est in id nisi. Magna ut dolore aliquip nulla tempor fugiat occaecat nisi amet. Lorem fugiat esse eiusmod ex mollit incididunt irure labore laborum.",
+  "projects": [
+    { "username": "bkeys818", "repo": "spotify-tools" },
+    { "username": "bkeys818", "repo": "CardCarousel" },
+    { "username": "bkeys818", "repo": "shopify-template-schema" },
+    { "username": "bkeys818", "repo": "personal-site" }
+  ],
+  "hardSkills": [
+    {
+      "title": "languages",
+      "icons": [
+        { "title": "Swift", "slug": "swift", "href": "https://www.swift.org" },
+        {
+          "title": "Javascript",
+          "slug": "javascript",
+          "href": "https://developer.oracle.com/languages/javascript.html"
+        },
+        {
+          "title": "TypeScript",
+          "slug": "typescript",
+          "href": "https://www.typescriptlang.org"
+        },
+        {
+          "title": "HTML5",
+          "slug": "html5",
+          "href": "https://html.spec.whatwg.org/multipage/"
+        },
+        {
+          "title": "CSS3",
+          "slug": "css3",
+          "href": "https://www.w3.org/style/css/overview"
+        },
+        {
+          "title": "Bash",
+          "slug": "gnubash",
+          "href": "https://www.gnu.org/software/bash/"
+        }
+      ]
+    },
+    {
+      "title": "frameworks",
+      "icons": [
+        {
+          "title": "Node.js",
+          "slug": "nodedotjs",
+          "href": "https://nodejs.org"
+        },
+        {
+          "title": "Firebase",
+          "slug": "firebase",
+          "href": "https://firebase.google.com"
+        },
+        { "title": "Astro", "slug": "astro", "href": "https://astro.build" },
+        { "title": "Svelte", "slug": "svelte", "href": "https://svelte.dev" },
+        { "title": "React", "slug": "react", "href": "https://react.dev" }
+      ]
+    },
+    {
+      "title": "tools",
+      "icons": [
+        { "title": "Git", "slug": "git", "href": "https://git-scm.com" },
+        { "title": "Jest", "slug": "jest", "href": "https://jestjs.io" },
+        {
+          "title": "Prettier",
+          "slug": "prettier",
+          "href": "https://prettier.io"
+        },
+        { "title": "EsLint", "slug": "eslint", "href": "https://eslint.org" },
+        { "title": "Sass", "slug": "sass", "href": "https://sass-lang.com" },
+        {
+          "title": "TailwindCSS",
+          "slug": "tailwindcss",
+          "href": "https://tailwindcss.com"
+        },
+        { "title": "PostCSS", "slug": "postcss", "href": "https://postcss.org" }
+      ]
+    }
+  ],
+  "sortSkills": [
+    {
+      "title": "Problem Solver",
+      "desc": "Problem-solving is an inherent aspect of my work ethic. I possess an innate talent for recognizing and tackling even the most challenging issues, particularly those overlooked by others. If I come across a problem that I am unable to resolve, I proactively seek out solutions, either by learning new techniques or by consulting with experts in the field. By taking this approach, I have been able to refine my skills and expand my knowledge base to overcome any obstacles that come my way."
+    },
+    {
+      "title": "Quick learner & adaptable",
+      "desc": "Since a young age, I have dedicated my free time to teaching myself a diverse range of skills. Initially, I began my journey by immersing myself in graphic design, which eventually paved the way for my entry into the world of programming. With my extensive skillset and aptitude for rapid learning, I have developed a versatile set of competencies that make me a valuable asset in any project or team."
+    },
+    {
+      "title": "Patern Oriented",
+      "desc": "My ability to recognize patterns plays a significant role in the way I approach problem-solving. It’s helped me develop a sharp intuition and made me highly perceptive in my work. My pattern recognition skills serve as a vital asset in my work, helping me to excel in a range of technical disciplines."
+    },
+    {
+      "title": "People person & outgoing",
+      "desc": "I’m thrive in social environments, working alongside others. When the situation demands it, I can naturally assume a leadership role, guiding and motivating others towards achieving a shared goal. My sociable nature and leadership skills make me an ideal fit for any team-oriented project."
+    }
+  ]
+}
