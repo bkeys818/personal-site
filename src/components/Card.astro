@@ -10,12 +10,11 @@ interface Props {
 }
 
 const { title, desc, date, tags, href, imgSrc, imgAlt } = Astro.props
-const includeTag = tags ? tags.length > 0 : false
 ---
 
-<div class="col-span-12 sm:col-span-6 lg:col-span-4 shadow-md">
+<div class="col-span-12 shadow-md sm:col-span-6 lg:col-span-4 max-h-96">
   <a href={href}>
-    <div class="relative overflow-hidden pt-[60%]">
+    <div class="relative overflow-hidden bg-primary pt-[60%]">
       <img
         src={imgSrc}
         alt={imgAlt}
@@ -24,16 +23,13 @@ const includeTag = tags ? tags.length > 0 : false
     </div>
     <div class="p-2">
       {
-        (includeTag || date) && (
-          <h4>
-            {includeTag && tags!.join()}
-            {includeTag && date && <span class="vertical-divider">|</span>}
-            {date && date.toLocaleDateString()}
-          </h4>
+        (tags ? tags.length > 0 : false) && (
+          <h5 class="font-normal">{tags!.join()}</h5>
         )
       }
-      <h3>{title}</h3>
-      {desc && <p>{desc}</p>}
+      <h3 class="mt-1">{title}</h3>
+      <h5 class="mt-[2px] font-normal">{date && date.toLocaleDateString()}</h5>
+      {desc && <p class="mt-[5px] truncate-multiline-4">{desc}</p>}
     </div>
   </a>
 </div>
