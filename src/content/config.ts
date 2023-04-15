@@ -6,7 +6,7 @@ export const collections = {
       title: z.string(),
       date: z.date().transform(d => new Date(d)),
       desc: z.string(),
-      tags: z.array(z.enum(['some tag'])).refine(
+      tags: z.array(z.enum(['some tag', 'programming'])).refine(
         (arr) => arr.length === new Set(arr).size,
         "Tags must be unique"
       ),
