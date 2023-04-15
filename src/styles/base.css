@@ -16,7 +16,11 @@
       right: 0;
       bottom: 0;
       z-index: -999;
-      background-image: linear-gradient(theme(colors.blue.100), theme(colors.blue.50) 15vh, theme(backgroundColor.primary));
+      background-image: linear-gradient(
+        theme(colors.blue.100),
+        theme(colors.blue.50) 15vh,
+        theme(backgroundColor.primary)
+      );
     }
   }
 }
@@ -39,7 +43,14 @@
 
 @layer utilities {
   /* Typography */
-  h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  h1,
+  h2,
+  h3,
+  h4,
+  .h1,
+  .h2,
+  .h3,
+  .h4 {
     @apply font-medium;
   }
   h1,
@@ -75,43 +86,84 @@
       @apply font-semibold;
     }
   }
-  article, .content {
-    & p, & li {
+  article,
+  .content {
+    & p,
+    & li {
       @apply text-secondary;
     }
   }
 
-  /** spacing **/
-  article, main > .content { @apply mt-14 }
-  section { @apply mt-14 }
-  article, .content, section {
-    & *:first-child { @apply mt-0; }
-    & > * + *:not(section, h1,h2,h3,h4,h5) { @apply mt-4; }
+  .truncate-multiline-4 {
+    @apply text-ellipsis overflow-hidden whitespace-normal;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
   }
 
+  /** spacing **/
+  article,
+  main > .content {
+    @apply mt-14;
+  }
+  section {
+    @apply mt-14;
+  }
+  article,
+  .content,
+  section {
+    & *:first-child {
+      @apply mt-0;
+    }
+    & > * + *:not(section, h1, h2, h3, h4, h5) {
+      @apply mt-4;
+    }
+  }
 
-  h1 { @apply mt-10 }
-  h2 { @apply mt-10 }
-  h3 { @apply mt-6 }
-  h4 { @apply mt-4 }
-  h5 { @apply mt-2 }
-  h1, h2, h3, h4,h5 {
-    &:first-child { @apply mt-0; }
+  h1 {
+    @apply mt-10;
+  }
+  h2 {
+    @apply mt-10;
+  }
+  h3 {
+    @apply mt-6;
+  }
+  h4 {
+    @apply mt-4;
+  }
+  h5 {
+    @apply mt-2;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    &:first-child {
+      @apply mt-0;
+    }
   }
 
   /* Text compontent styles */
-  article, .content {
-    & ul { @apply list-disc; }
-    & ol { @apply list-decimal; }
-    & ul, ol {
-    @apply list-outside pl-6;
+  article,
+  .content {
+    & ul {
+      @apply list-disc;
+    }
+    & ol {
+      @apply list-decimal;
+    }
+    & ul,
+    ol {
+      @apply list-outside pl-6;
       & li {
         @apply mt-2;
       }
     }
     & a {
       @apply underline;
-      color: theme(colors.blue.400)
+      color: theme(colors.blue.400);
     }
   }
 }
