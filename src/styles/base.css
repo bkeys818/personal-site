@@ -23,6 +23,9 @@
       );
     }
   }
+  blockquote {
+    @apply ml-2 border-l-4 border-blue-400 bg-secondary px-3 py-2 italic;
+  }
 }
 
 @layer components {
@@ -95,7 +98,7 @@
   }
 
   .truncate-multiline-4 {
-    @apply text-ellipsis overflow-hidden whitespace-normal;
+    @apply overflow-hidden text-ellipsis whitespace-normal;
     display: -webkit-box !important;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -103,7 +106,8 @@
 
   /** spacing **/
   article,
-  main > .content, section {
+  main > .content,
+  section {
     @apply mt-10 md:mt-14;
   }
   article,
@@ -161,6 +165,14 @@
     & a {
       @apply underline;
       color: theme(colors.blue.400);
+    }
+  }
+
+  blockquote .attribution {
+    @apply !mt-2 font-thin;
+    &::before {
+      @apply pr-1.5;
+      content: '\2014';
     }
   }
 }
