@@ -5,19 +5,21 @@ interface Props {
   desc?: string
   tags?: string[]
   href: string
-  imgSrc?: string
-  imgAlt?: string
+  img: {
+    src: string
+    alt?: string
+  }
 }
 
-const { title, desc, date, tags, href, imgSrc, imgAlt } = Astro.props
+const { title, desc, date, tags, href, img } = Astro.props
 ---
 
 <div class="col-span-12 shadow-md sm:col-span-6 lg:col-span-4 max-h-96">
   <a href={href}>
     <div class="relative overflow-hidden bg-primary pt-[60%]">
       <img
-        src={imgSrc}
-        alt={imgAlt}
+        src={img.src}
+        alt={img.alt}
         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
       />
     </div>
