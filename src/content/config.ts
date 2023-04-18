@@ -10,8 +10,11 @@ export const collections = {
         (arr) => arr.length === new Set(arr).size,
         "Tags must be unique"
       ),
-      imgSrc: z.string().optional(),
-      imgAlt: z.string().optional(),
+      img: z.object({
+        src: z.string(),
+        alt: z.string().optional(),
+        bgColor: z.string().regex(/[a-f\d]{6}|[a-f\d]{3}/).optional()
+      })
     }),
   }),
 }

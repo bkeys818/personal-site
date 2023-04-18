@@ -4,8 +4,9 @@ title: Blog Post
 desc: Proident veniam eu minim exercitation. Excepteur anim ut veniam aliqua irure nisi esse qui commodo consequat ullamco est non. Esse ipsum cillum Lorem id cillum enim aute commodo proident deserunt aliqua cupidatat dolor elit.
 date: 2001-12-05
 tags: ['some tag']
-imgSrc: https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg
-imageAlt: alt description
+img:
+    src: https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg
+    alt: alt description
 ---
 
 # Blog Post
