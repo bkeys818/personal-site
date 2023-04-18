@@ -1,0 +1,64 @@
+---
+const title = "Hi, I'm "
+const baseChar = title.length
+---
+
+<div id="typing-title" class="grid place-items-center" data-label="">
+  <div>
+    <h1 class="text-xl sm:text-4xl ">{title + "Ben Keys"}</h1>
+  </div>
+</div>
+
+<style define:vars={{ baseChar }}>
+  #typing-title div {
+    padding: 0 0.1ch 0.1em 0;
+    animation: blink 0.5s step-end infinite alternate;
+    border-right: 3px solid;
+  }
+  #typing-title h1 {
+    width: calc(var(--nChar) * 1ch);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    animation: typing 5s steps(calc(var(--nChar) - var(--baseChar)), start) infinite alternate;
+  }
+
+  @keyframes typing {
+    80% {
+      width: calc(var(--nChar) * 1ch);
+    }
+    to {
+      width: calc(var(--baseChar) * 1ch);
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+</style>
+
+<script>
+  const labels = ['Ben Keys', 'a Freelancer', 'a Developer', 'a Rock Climber']
+  const $element: HTMLElement = document.querySelector('#typing-title')!
+  const $title = $element.querySelector("h1")!
+
+  let i = 0
+  const n = labels.length
+  function changeTitle() {
+    const title = "Hi, I'm " + labels[(i % n + n) % n]
+    $title.textContent = title
+    $element.style.setProperty('--nChar', title.length.toString())
+    i++;
+  }
+
+  let ii = 0
+  changeTitle()
+  $title.addEventListener("animationiteration", () => {
+    if (ii % 2 == 0) {
+      changeTitle()
+    }
+    ii++
+  });
+</script>

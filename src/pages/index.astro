@@ -1,12 +1,13 @@
 ---
 import Layout from '@layouts/Layout.astro'
+import TypingTitle from '@components/TypingTitle.astro';
 
 import { about, projects, hardSkills, sortSkills } from '@data/portfolio.json'
 ---
 
 <Layout title="Ben Keys - Portfolio">
   <div class="content text-center">
-    <h1>Hi, I'm Ben Keys</h1>
+    <TypingTitle />
 
     <p class="text-lg">{about}</p>
 
