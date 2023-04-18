@@ -103,11 +103,8 @@
 
   /** spacing **/
   article,
-  main > .content {
-    @apply mt-14;
-  }
-  section {
-    @apply mt-14;
+  main > .content, section {
+    @apply mt-10 md:mt-14;
   }
   article,
   .content,
