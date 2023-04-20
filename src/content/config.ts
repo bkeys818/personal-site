@@ -6,15 +6,16 @@ export const collections = {
       title: z.string(),
       date: z.date().transform(d => new Date(d)),
       desc: z.string(),
-      tags: z.array(z.enum(['some tag', 'programming'])).refine(
-        (arr) => arr.length === new Set(arr).size,
-        "Tags must be unique"
-      ),
+      tag: z.enum(['some tag', 'programming']),
       img: z.object({
         src: z.string(),
         alt: z.string().optional(),
-        bgColor: z.string().regex(/[a-f\d]{6}|[a-f\d]{3}/).optional()
-      })
+        bgColor: z
+          .string()
+          .regex(/[a-f\d]{6}|[a-f\d]{3}/)
+          .optional(),
+        contain: z.boolean().optional()
+      }),
     }),
   }),
 }

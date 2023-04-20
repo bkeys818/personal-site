@@ -3,35 +3,47 @@ interface Props {
   title: string
   date?: Date
   desc?: string
-  tags?: string[]
+  tag?: string
   href: string
   img: {
     src: string
     alt?: string
+    bgColor?: string
+    contain?: boolean
   }
 }
 
-const { title, desc, date, tags, href, img } = Astro.props
+const { title, desc, date, tag, href, img } = Astro.props
 ---
-
-<div class="col-span-12 shadow-md sm:col-span-6 lg:col-span-4 max-h-96">
-  <a href={href}>
-    <div class="relative overflow-hidden bg-primary pt-[60%]">
-      <img
-        src={img.src}
-        alt={img.alt}
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-      />
-    </div>
-    <div class="p-2">
+  
+<a
+    class="col-span-12 flex flex-col bg-secondary shadow-md sm:col-span-6 lg:col-span-4"
+    href={href}
+  >
+    <img
+      src={img.src}
+      alt={img.alt}
+      class={`h-60 w-full ${img.contain ? 'object-contain' : 'object-cover'}`}
+      style={img.bgColor ? 'background: #' + img.bgColor : undefined}
+    />
+    <div class="grow p-3">
       {
-        (tags ? tags.length > 0 : false) && (
-          <h5 class="font-normal">{tags!.join()}</h5>
+        date && (
+          <div class="flex items-center">
+            <p class="text-sm font-light">{date && date.toLocaleDateString()}</p>
+            {tag && <p class="text-sm grow text-right font-light">#{tag}</p>}
+          </div>
         )
       }
-      <h3 class="mt-1">{title}</h3>
-      <h5 class="mt-[2px] font-normal">{date && date.toLocaleDateString()}</h5>
-      {desc && <p class="mt-[5px] truncate-multiline-4">{desc}</p>}
+      <h3 class="my-2">{title}</h3>
+      {desc && <p class="truncate-multiline-4">{desc}</p>}
     </div>
-  </a>
-</div>
+    {
+      date && (
+        <div class="border-t-secondary flex items-center border-t-[1px] px-2 py-3">
+          <p class="grow">Read Article</p>
+          <p>-&gt;</p>
+        </div>
+      )
+    }
+</a>
