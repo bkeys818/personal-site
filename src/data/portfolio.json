@@ -1,5 +1,5 @@
 {
-  "about": "Nulla ullamco sint mollit nisi quis cillum deserunt et commodo. Tempor laboris duis amet ipsum nulla sit cupidatat duis. Proident ea sit magna consequat reprehenderit. Officia irure nostrud id officia dolore culpa dolor est in id nisi. Magna ut dolore aliquip nulla tempor fugiat occaecat nisi amet. Lorem fugiat esse eiusmod ex mollit incididunt irure labore laborum.",
+  "about": "I’m an ambitious, multifaceted, and tenacious programmer. My experience is primarily in front-end development, particularly iOS and web, but I’m adventuring into backend work. I spent 7+ years working in radio, media, and graphic design, where I picked up a wide range of skills. To top it off, I absolutely love rockclimbing!",
   "projects": [
     { "username": "bkeys818", "repo": "spotify-tools" },
     { "username": "bkeys818", "repo": "CardCarousel" },
@@ -80,19 +80,19 @@
   "sortSkills": [
     {
       "title": "Problem Solver",
-      "desc": "Problem-solving is an inherent aspect of my work ethic. I possess an innate talent for recognizing and tackling even the most challenging issues, particularly those overlooked by others. If I come across a problem that I am unable to resolve, I proactively seek out solutions, either by learning new techniques or by consulting with experts in the field. By taking this approach, I have been able to refine my skills and expand my knowledge base to overcome any obstacles that come my way."
+      "desc": "Problem-solving is an inherent aspect of my work ethic. I possess an innate talent for recognizing and tackling even the most challenging issues, particularly those others overlook. If I encounter a problem that I cannot resolve, I proactively seek solutions, either by learning new techniques or consulting with experts in the field. By taking this approach, I have been able to refine my skills and expand my knowledge base to overcome any obstacles that come my way."
     },
     {
       "title": "Quick learner & adaptable",
-      "desc": "Since a young age, I have dedicated my free time to teaching myself a diverse range of skills. Initially, I began my journey by immersing myself in graphic design, which eventually paved the way for my entry into the world of programming. With my extensive skillset and aptitude for rapid learning, I have developed a versatile set of competencies that make me a valuable asset in any project or team."
+      "desc": "Since a young age, I have dedicated my free time to teaching myself a diverse range of skills. Initially, I began my journey by immersing myself in graphic design, which eventually paved the way for my entry into the world of programming. With my extensive skill set and aptitude for rapid learning, I have developed a versatile collection of competencies that make me a valuable asset in any project or team."
     },
     {
       "title": "Patern Oriented",
-      "desc": "My ability to recognize patterns plays a significant role in the way I approach problem-solving. It’s helped me develop a sharp intuition and made me highly perceptive in my work. My pattern recognition skills serve as a vital asset in my work, helping me to excel in a range of technical disciplines."
+      "desc": "My ability to recognize patterns plays a significant role in the way I approach problem-solving. It’s helped me develop a sharp intuition and made me highly perceptive in my work. My pattern recognition skills are a vital asset in my work, allowing me to excel in various technical disciplines."
     },
     {
       "title": "People person & outgoing",
-      "desc": "I’m thrive in social environments, working alongside others. When the situation demands it, I can naturally assume a leadership role, guiding and motivating others towards achieving a shared goal. My sociable nature and leadership skills make me an ideal fit for any team-oriented project."
+      "desc": "I thrive in social environments, working alongside others. When the situation demands it, I can naturally assume a leadership role, guiding and motivating others toward achieving a shared goal. My sociable nature and leadership skills make me an ideal fit for any team-oriented project."
     }
   ]
 }
