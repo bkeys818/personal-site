@@ -6,7 +6,7 @@ export const collections = {
       title: z.string(),
       date: z.date().transform(d => new Date(d)),
       desc: z.string(),
-      tag: z.enum(['some tag', 'programming']),
+      tag: z.enum(['tech', 'programming']),
       img: z.object({
         src: z.string(),
         alt: z.string().optional(),
