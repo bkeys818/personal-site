@@ -5,7 +5,7 @@ desc: A demo post used to style headings
 date: 2023-03-20
 tag: programming
 img:
-    src: /public/headings.png
+    src: /images/headings.png
     alt: alt description
 ---
 
