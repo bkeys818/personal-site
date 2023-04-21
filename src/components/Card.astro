@@ -30,8 +30,8 @@ const { title, desc, date, tag, href, img } = Astro.props
       {
         date && (
           <div class="flex items-center">
-            <p class="text-sm font-light">{date && date.toLocaleDateString()}</p>
-            {tag && <p class="text-sm grow text-right font-light">#{tag}</p>}
+            <h6>{date && date.toLocaleDateString()}</h6>
+            {tag && <h6 class="grow text-right">#{tag}</h6>}
           </div>
         )
       }
