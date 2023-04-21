@@ -4,7 +4,7 @@
     "desc": "A website with several tools to use alongside Spotify.",
     "href": "https://spotify-tools.ben-keys.com",
     "img": {
-      "src": "images/spotify_logo.jpg",
+      "src": "/images/spotify_logo.jpg",
       "alt": "Spotify Logo"
     }
   }
