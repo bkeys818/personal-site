@@ -1,34 +1,37 @@
 ---
-const title = "Hi, I'm "
-const baseChar = title.length
+const staticTitle = "Hi, I'm "
+const staticTitleLength = staticTitle.length
 ---
 
-<div id="typing-title" class="grid place-items-center" data-label="">
+<div id="typing-title" class="grid place-items-center">
   <div>
-    <h1 class="text-xl sm:text-4xl ">{title + "Ben Keys"}</h1>
+    <h1 class="text-xl sm:text-4xl ">{staticTitle + "Ben Keys"}</h1>
   </div>
 </div>
+<noscript>
+  <h1>{staticTitle}Ben Keys</h1>
+</noscript>
 
-<style define:vars={{ baseChar }}>
+<style define:vars={{ staticTitleLength }}>
   #typing-title div {
     padding: 0 0.1ch 0.1em 0;
     animation: blink 0.5s step-end infinite alternate;
     border-right: 3px solid;
   }
   #typing-title h1 {
-    width: calc(var(--nChar) * 1ch);
+    width: calc(var(--titleLength) * 1ch);
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
-    animation: typing 5s steps(calc(var(--nChar) - var(--baseChar)), start) infinite alternate;
+    animation: typing 5s steps(calc(var(--titleLength) - var(--staticTitleLength)), start) infinite alternate;
   }
 
   @keyframes typing {
     80% {
-      width: calc(var(--nChar) * 1ch);
+      width: calc(var(--titleLength) * 1ch);
     }
     to {
-      width: calc(var(--baseChar) * 1ch);
+      width: calc(var(--staticTitleLength) * 1ch);
     }
   }
 
@@ -49,16 +52,15 @@ const baseChar = title.length
   function changeTitle() {
     const title = "Hi, I'm " + labels[(i % n + n) % n]
     $title.textContent = title
-    $element.style.setProperty('--nChar', title.length.toString())
-    i++;
+    $element.style.setProperty('--titleLength', title.length.toString())
+    i++
   }
 
-  let ii = 0
   changeTitle()
-  $title.addEventListener("animationiteration", () => {
-    if (ii % 2 == 0) {
+  $title.addEventListener("animationiteration", (event) => {
+    // Uses animation duration to only run every other time
+    if (event.elapsedTime % 10 == 5) {
       changeTitle()
     }
-    ii++
   });
 </script>
