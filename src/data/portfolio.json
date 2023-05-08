@@ -1,5 +1,5 @@
 {
-  "about": "I’m an ambitious, multifaceted, and tenacious programmer. My experience is primarily in front-end development, particularly iOS and web, but I’m adventuring into backend work. I spent 7+ years working in radio, media, and graphic design, where I picked up a wide range of skills. To top it off, I absolutely love rockclimbing!",
+  "about": "I’m an ambitious, multifaceted, and tenacious programmer. My experience is primarily in front-end development (particularly iOS and web), but I’m also adventuring into backend work. I spent 7+ years working in radio, graphic design, and videography where I picked up a wide range of skills. I'll be graduating from Ball State University in Fall 2023 with a Bachelor’s in Media and a minor in CS. On a more personal note, I started rock climbing in 2019, and I can't get enough of it.",
   "projects": [
     { "username": "bkeys818", "repo": "spotify-tools" },
     { "username": "bkeys818", "repo": "CardCarousel" },
@@ -77,13 +77,13 @@
       ]
     }
   ],
-  "sortSkills": [
+  "softSkills": [
     {
       "title": "Problem Solver",
       "desc": "Problem-solving is an inherent aspect of my work ethic. I possess an innate talent for recognizing and tackling even the most challenging issues, particularly those others overlook. If I encounter a problem that I cannot resolve, I proactively seek solutions, either by learning new techniques or consulting with experts in the field. By taking this approach, I have been able to refine my skills and expand my knowledge base to overcome any obstacles that come my way."
     },
     {
-      "title": "Quick learner & adaptable",
+      "title": "Quick Learner & Adaptable",
       "desc": "Since a young age, I have dedicated my free time to teaching myself a diverse range of skills. Initially, I began my journey by immersing myself in graphic design, which eventually paved the way for my entry into the world of programming. With my extensive skill set and aptitude for rapid learning, I have developed a versatile collection of competencies that make me a valuable asset in any project or team."
     },
     {
@@ -91,7 +91,7 @@
       "desc": "My ability to recognize patterns plays a significant role in the way I approach problem-solving. It’s helped me develop a sharp intuition and made me highly perceptive in my work. My pattern recognition skills are a vital asset in my work, allowing me to excel in various technical disciplines."
     },
     {
-      "title": "People person & outgoing",
+      "title": "People Person & Outgoing",
       "desc": "I thrive in social environments, working alongside others. When the situation demands it, I can naturally assume a leadership role, guiding and motivating others toward achieving a shared goal. My sociable nature and leadership skills make me an ideal fit for any team-oriented project."
     }
   ]
