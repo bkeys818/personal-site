@@ -5,7 +5,10 @@ import TypingTitle from '@components/TypingTitle.astro';
 import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
 ---
 
-<Layout title="Ben Keys - Portfolio">
+<Layout
+  title="Ben Keys - Portfolio"
+  desc="Ben Keys' front-end developer portfolio website"
+>
   <div class="content text-center">
     <TypingTitle />
 
@@ -23,7 +26,7 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
               <img
                 src={`https://github-readme-stats.vercel.app/api/pin?username=${username}&repo=${repo}&text_color=5E5E5E`}
                 alt="Repository Card"
-                height="150"
+                height="120"
                 width="400"
               />
             </a>
@@ -37,7 +40,7 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
       {
         hardSkills.map(({ title, icons }) => (
           <>
-            <h4>{title.toUpperCase()}</h4>
+            <h3 class="h4">{title.toUpperCase()}</h3>
             <div class="flex flex-wrap justify-center gap-x-3 gap-y-2">
               {icons.map(({ title, href, slug }) => (
                 <a
@@ -65,7 +68,7 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
         {
           softSkills.map(({ title, desc }) => (
             <div>
-              <h4>{title}</h4>
+              <h3 class="h4">{title}</h3>
               <p class="mx-auto mt-2 max-w-2xl text-lg">{desc}</p>
             </div>
           ))

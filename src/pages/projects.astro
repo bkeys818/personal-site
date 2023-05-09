@@ -6,7 +6,10 @@ import Card from '@components/Card.astro'
 import projects from '@data/projects.json'
 ---
 
-<Layout title="Ben Keys">
+<Layout
+  title="Ben Keys - Projects"
+  desc="Ben Keys is a software engineer. This is a list of his personal projects and tools."
+>
   <h1 class="my-6 text-center">Personal Projects</h1>
   <CardGrid>
     {projects.map(project => <Card {...project} />)}
