@@ -11,7 +11,10 @@ const posts = (await getCollection('blog')).sort((a, b) => {
 
 ---
 
-<Layout title="Ben Keys">
+<Layout
+  title="Ben Keys"
+  desc="Ben Keys writes blog post about programming, new technology, and rock climbing."
+>
   <h1 class="my-6 text-center">Blog Posts</h1>
   <CardGrid>
     {posts.map(post => <Card {...post.data} href={'/blog/' + post.slug} />)}
