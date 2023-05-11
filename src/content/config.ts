@@ -10,10 +10,7 @@ export const collections = {
       img: z.object({
         src: z.string(),
         alt: z.string().optional(),
-        bgColor: z
-          .string()
-          .regex(/[a-f\d]{6}|[a-f\d]{3}/)
-          .optional(),
+        bgColor: z.string().optional(),
         contain: z.boolean().optional()
       }),
     }),

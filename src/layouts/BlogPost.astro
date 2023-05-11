@@ -1,21 +1,19 @@
 ---
 import Layout from '@layouts/Layout.astro'
+import type { CollectionEntry } from 'astro:content'
 
 export interface Props {
-  title: string,
-  desc: string,
+  frontmatter: CollectionEntry<'blog'>['data']
 }
 
 const {
-  frontmatter: {
-    title,
-    desc
-  }
+  frontmatter: { title, desc },
 } = Astro.props
 ---
 
-<Layout title={title} desc={desc + " Author: Ben Keys."}>
+<Layout title={title} desc={desc + ' Author: Ben Keys.'}>
   <article class="max-w-3xl">
+    <h1>{title}</h1>
     <slot />
   </article>
 </Layout>
