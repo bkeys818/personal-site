@@ -8,4 +8,10 @@ export default defineConfig({
       config: { applyBaseStyles: false },
     }),
   ],
+  markdown: {
+    shikiConfig: {
+      theme: 'one-dark-pro',
+      wrap: true,
+    }
+  }
 })
