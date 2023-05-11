@@ -8,7 +8,7 @@ img:
     src: /images/ChatGPT_logo.png
     alt: linked list
     contain: true
-    bgColor: 74ac9e
+    bgColor: '#74ac9e'
 ---
 
 # Meal Preping with ChatGPT

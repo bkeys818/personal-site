@@ -24,7 +24,7 @@ const { title, desc, date, tag, href, img } = Astro.props
       src={img.src}
       alt={img.alt}
       class={`h-60 w-full ${img.contain ? 'object-contain' : 'object-cover'}`}
-      style={img.bgColor ? 'background: #' + img.bgColor : undefined}
+      style={img.bgColor ? 'background: ' + img.bgColor : undefined}
     />
     <div class="grow p-3">
       {
