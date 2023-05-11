@@ -53,8 +53,7 @@
   .h1,
   .h2,
   .h3,
-  .h4
-   {
+  .h4 {
     @apply font-medium;
   }
   h1,
@@ -69,8 +68,7 @@
   .h3 {
     @apply text-2xl;
   }
-  h4
-  .h4 {
+  h4 .h4 {
     @apply text-xl;
   }
   h5,
@@ -190,4 +188,8 @@
       content: '\2014';
     }
   }
+}
+
+.astro-code {
+  @apply py-4 pl-5 pr-7 rounded-md shadow-md text-sm;
 }
