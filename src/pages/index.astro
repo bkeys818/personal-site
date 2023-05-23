@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro'
-import TypingTitle from '@components/TypingTitle.astro';
+import TypingTitle from '@components/TypingTitle.astro'
+import CardFlip from '@components/CardFlip.astro'
 
 import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
 ---
@@ -12,11 +13,11 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
   <div class="content text-center">
     <TypingTitle />
 
-    <p class="text-lg md:max-w-3xl md:m-auto">{about}</p>
+    <p class="text-lg md:m-auto md:max-w-3xl">{about}</p>
 
     <section>
       <h2>Projects</h2>
-      <div class="flex flex-wrap justify-center gap-x-4 gap-y-3">
+      <div class="flex flex-wrap justify-center gap-x-4 gap-y-3 my-0-all">
         {
           projects.map(({ username, repo }) => (
             <a
@@ -40,7 +41,7 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
       {
         hardSkills.map(({ title, icons }) => (
           <>
-            <h3 class="h4">{title.toUpperCase()}</h3>
+            <h4>{title.toUpperCase()}</h4>
             <div class="flex flex-wrap justify-center gap-x-3 gap-y-2">
               {icons.map(({ title, href, slug }) => (
                 <a
@@ -64,13 +65,16 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
 
     <section>
       <h2>Soft Skills</h2>
-      <div class="grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-2">
+      <div class="flex flex-wrap gap-10 justify-center">
+        <!-- <div class="grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-2"> -->
         {
           softSkills.map(({ title, desc }) => (
-            <div>
-              <h3 class="h4">{title}</h3>
-              <p class="mx-auto mt-2 max-w-2xl text-lg">{desc}</p>
-            </div>
+            <CardFlip width={420} height={350}>
+              <div slot="front">
+                <h3>{title}</h3>
+              </div>
+              <p slot="back">{desc}</p>
+            </CardFlip>
           ))
         }
       </div>

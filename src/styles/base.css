@@ -23,8 +23,122 @@
       );
     }
   }
+
+  /* #region ***** Typography *****/
   blockquote {
     @apply ml-2 border-l-4 border-blue-400 bg-secondary px-3 py-2 italic;
+  }
+  h1 {
+    @apply text-center;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-medium;
+  }
+  h1 {
+    @apply text-center text-5xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+  h5 {
+    @apply text-base font-semibold text-secondary;
+  }
+  h6 {
+    @apply text-sm font-light;
+  }
+  p {
+    @apply leading-relaxed;
+  }
+  article {
+    & h2,
+    h3,
+    h4 {
+      @apply font-semibold;
+    }
+  }
+  article,
+  .content {
+    & p,
+    & li {
+      @apply text-secondary;
+    }
+  }
+  /* #endregion */
+
+  /* #region ***** Spacing *****/
+  blockquote,
+  :not(div) > div,
+  figcaption,
+  figure,
+  hr,
+  ol,
+  p,
+  pre,
+  ul,
+  audio,
+  img,
+  video,
+  embed,
+  iframe,
+  picture,
+  source,
+  svg,
+  canvas {
+      @apply my-4;
+  }
+
+  h1,
+  h2 {
+    @apply mt-10 mb-6;
+  }
+  h3 {
+    @apply mt-6 mb-4;
+  }
+  h4 {
+    @apply mt-4 mb-2;
+  }
+  h5 {
+    @apply mt-2 mb-1;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    &:first-child {
+      @apply mt-0;
+    }
+  }
+  /* #endregion */
+
+  /* #region ***** Text Compontent Styles *****/
+
+  /* #endregion */
+  :not(nav) > ul {
+    @apply list-disc;
+  }
+  ol {
+    @apply list-decimal;
+  }
+  :not(nav) > ul,
+  ol {
+    @apply list-outside pl-6;
+    & li {
+      @apply mt-2;
+    }
+  }
+  p a {
+    @apply underline;
+    color: theme(colors.blue.400);
   }
 }
 
@@ -42,143 +156,11 @@
   .icon {
     @apply inline-block h-6 w-6;
   }
-}
-
-@layer utilities {
-  /* Typography */
-  h1,
-  h2,
-  h3,
-  h4,
-  .h1,
-  .h2,
-  .h3,
-  .h4 {
-    @apply font-medium;
-  }
-  h1,
-  .h1 {
-    @apply text-center text-5xl;
-  }
-  h2,
-  .h2 {
-    @apply text-4xl;
-  }
-  h3,
-  .h3 {
-    @apply text-2xl;
-  }
-  h4 .h4 {
-    @apply text-xl;
-  }
-  h5,
-  .h5 {
-    @apply text-base font-semibold text-secondary;
-  }
-  h6,
-  .h6 {
-    @apply text-sm font-light;
-  }
-  p {
-    @apply leading-relaxed;
-  }
-  article {
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4 {
-      @apply font-semibold;
-    }
-  }
-  article,
-  .content {
-    & p,
-    & li {
-      @apply text-secondary;
-    }
-  }
-
   .truncate-multiline-4 {
     @apply overflow-hidden text-ellipsis whitespace-normal;
     display: -webkit-box !important;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-  }
-
-  /** spacing **/
-  article,
-  main > .content,
-  section {
-    @apply mt-10 md:mt-14;
-  }
-  article,
-  .content,
-  section {
-    & *:first-child {
-      @apply mt-0;
-    }
-    & > * + *:not(section, h1, h2, h3, h4, h5, h6) {
-      @apply mt-4;
-    }
-  }
-
-  h1,
-  .h1 {
-    @apply mt-10;
-  }
-  h2,
-  .h2 {
-    @apply mt-10;
-  }
-  h3,
-  .h3 {
-    @apply mt-6;
-  }
-  h4,
-  .h4 {
-    @apply mt-4;
-  }
-  h5,
-  .h5 {
-    @apply mt-2;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5 {
-    &:first-child {
-      @apply mt-0;
-    }
-  }
-
-  /* Text compontent styles */
-  article,
-  .content {
-    & ul {
-      @apply list-disc;
-    }
-    & ol {
-      @apply list-decimal;
-    }
-    & ul,
-    ol {
-      @apply list-outside pl-6;
-      & li {
-        @apply mt-2;
-      }
-    }
-    & a {
-      @apply underline;
-      color: theme(colors.blue.400);
-    }
   }
 
   blockquote .attribution {
@@ -188,8 +170,19 @@
       content: '\2014';
     }
   }
+  .my-0-all, .my-0-all * {
+    @apply my-0;
+  }
+}
+
+@layer utilities {
+  /***** Spacing *****/
+  main,
+  section {
+    @apply mt-10 md:mt-14;
+  }
 }
 
 .astro-code {
-  @apply py-4 pl-5 pr-7 rounded-md shadow-md text-sm;
+  @apply rounded-md py-4 pl-5 pr-7 text-sm shadow-md;
 }
