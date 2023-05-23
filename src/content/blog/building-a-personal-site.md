@@ -9,8 +9,6 @@ img:
     alt: tree with wires growing out of it
 ---
 
-# Building a Personal Site
-
 After years of putting it off, I decided it was finally time to build myself a personal site. Here’s my process.
 
 ## Designing a Wireframe

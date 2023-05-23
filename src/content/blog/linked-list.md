@@ -10,8 +10,6 @@ img:
     bgColor: fff
 ---
 
-# Linear Data Structures - Linked List
-
 ![linked list](/images/linked_list.png)
 
 Linked list work by by using nodes. Each node contains the data and a reference to the next node. The final node’s reference will point to `null`. The first node is called the head of the list.
