@@ -146,7 +146,7 @@
     @apply mx-auto max-w-5xl px-4 sm:px-6 lg:px-8;
   }
   .modal {
-    @apply invisible fixed left-0 top-0 z-50 h-full w-full overflow-auto opacity-0 transition-opacity duration-200 target:visible target:opacity-100;
+    @apply invisible fixed left-0 top-0 z-50 h-full w-full overflow-auto opacity-0 transition-opacity duration-200
   }
   span.vertical-divider {
     @apply px-1;
