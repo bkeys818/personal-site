@@ -3,8 +3,8 @@ import { menu, socials } from '@data/links.json'
 ---
 
 <header>
-  <div class="page-width flex items-center justify-between py-4 my-0-all">
-    <a href='/' class="font-medium py-0">Ben Keys</a>
+  <div class="page-width my-0-all flex items-center justify-between py-4">
+    <a href="/" class="py-0 font-medium">Ben Keys</a>
     <nav class="hidden sm:block">
       <ul class="flex gap-6">
         {
@@ -28,28 +28,44 @@ import { menu, socials } from '@data/links.json'
     <a class="sm:hidden" href="#header-modal">MENU</a>
   </div>
 </header>
-<div class="modal flex flex-col gap-8 bg-primary p-6" id="header-modal">
-  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-  <a href="#" class="!ml-auto">&#x2715</a>
-  <a href="/" class="text-center text-4xl font-light">Ben Keys</a>
-  <nav class="grow text-center">
-    <ul>
+<dialog
+  id="headerModal"
+  class="invisible fixed left-0 top-0 h-full w-full bg-primary p-4 opacity-0 transition-opacity duration-200 open:visible open:opacity-100"
+>
+  <div class="flex flex-col gap-4 h-full mt-0">
+    <form method="dialog">
+      <button class="float-right">&#x2715</button>
+    </form>
+    <a href="/" class="text-center text-4xl font-light">Ben Keys</a>
+    <nav class="grow text-center">
+      <ul>
+        {
+          menu.map(link => (
+            <li class="my-4">
+              <a href={link.href}>{link.name.toUpperCase()}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <div class="flex justify-center gap-4">
       {
-        menu.map(link => (
-          <li>
-            <a href={link.href}>{link.name.toUpperCase()}</a>
-          </li>
+        socials.map(({ src, href, alt }) => (
+          <a href={href}>
+            <img class="icon" src={src} alt={alt} />
+          </a>
         ))
       }
-    </ul>
-  </nav>
-  <div class="flex justify-center gap-4">
-    {
-      socials.map(({ src, href, alt }) => (
-        <a href={href}>
-          <img class="icon" src={src} alt={alt} />
-        </a>
-      ))
-    }
+    </div>
   </div>
-</div>
+</dialog>
+<script>
+  const modal = document.getElementById('headerModal')! as HTMLDialogElement
+  modal.addEventListener('close', () => {
+    document.body.style.removeProperty('overflow')
+  })
+  document.querySelector('.nav-icon')!.addEventListener('click', () => {
+    modal.show()
+    document.body.style.overflow = 'hidden'
+  })
+</script>
