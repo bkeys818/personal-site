@@ -1,5 +1,6 @@
 ---
 import { menu, socials } from '@data/links.json'
+import HamburgerIcon from './HamburgerIcon.astro';
 ---
 
 <header>
@@ -25,7 +26,7 @@ import { menu, socials } from '@data/links.json'
         ))
       }
     </div>
-    <a class="sm:hidden" href="#header-modal">MENU</a>
+    <HamburgerIcon size={32}/>
   </div>
 </header>
 <dialog
@@ -34,7 +35,9 @@ import { menu, socials } from '@data/links.json'
 >
   <div class="flex flex-col gap-4 h-full mt-0">
     <form method="dialog">
-      <button class="float-right">&#x2715</button>
+      <button class="float-right">
+        <HamburgerIcon size={32} />
+      </button>
     </form>
     <a href="/" class="text-center text-4xl font-light">Ben Keys</a>
     <nav class="grow text-center">
@@ -61,11 +64,14 @@ import { menu, socials } from '@data/links.json'
 </dialog>
 <script>
   const modal = document.getElementById('headerModal')! as HTMLDialogElement
+  const navIcon = modal.querySelector('dialog .nav-icon')!
   modal.addEventListener('close', () => {
     document.body.style.removeProperty('overflow')
+    navIcon.classList.remove('open')
   })
   document.querySelector('.nav-icon')!.addEventListener('click', () => {
     modal.show()
     document.body.style.overflow = 'hidden'
+    navIcon.classList.add('open')
   })
 </script>
