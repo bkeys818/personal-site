@@ -93,21 +93,21 @@
   source,
   svg,
   canvas {
-      @apply my-4;
+    @apply my-4;
   }
 
   h1,
   h2 {
-    @apply mt-10 mb-6;
+    @apply mb-6 mt-10;
   }
   h3 {
-    @apply mt-6 mb-4;
+    @apply mb-4 mt-6;
   }
   h4 {
-    @apply mt-4 mb-2;
+    @apply mb-2 mt-4;
   }
   h5 {
-    @apply mt-2 mb-1;
+    @apply mb-1 mt-2;
   }
   h1,
   h2,
@@ -121,8 +121,6 @@
   /* #endregion */
 
   /* #region ***** Text Compontent Styles *****/
-
-  /* #endregion */
   :not(nav) > ul {
     @apply list-disc;
   }
@@ -140,6 +138,7 @@
     @apply underline;
     color: theme(colors.blue.400);
   }
+  /* #endregion */
 }
 
 @layer components {
@@ -170,7 +169,8 @@
       content: '\2014';
     }
   }
-  .my-0-all, .my-0-all * {
+  .my-0-all,
+  .my-0-all * {
     @apply my-0;
   }
 }
