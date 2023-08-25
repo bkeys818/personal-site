@@ -11,5 +11,13 @@
     "astro", // Enable .astro
     "typescript", // Enable .ts
     "typescriptreact" // Enable .tsx
+  ],
+  "gitmoji.outputType": "emoji",
+  "gitmoji.addCustomEmoji": [
+    {
+      "code": ":orange_book:",
+      "description": "Add or update blog post(s)",
+      "emoji": "📙"
+    }
   ]
 }

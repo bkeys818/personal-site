@@ -3,7 +3,7 @@
     "astro-build.astro-vscode",
     "bradlc.vscode-tailwindcss",
     "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint"
-  ],
-  "unwantedRecommendations": []
+    "dbaeumer.vscode-eslint",
+    "seatonjiang.gitmoji-vscode"
+  ]
 }
