@@ -1,5 +1,5 @@
 {
-  "about": "I’m an ambitious, multifaceted, and tenacious developer. I've been building experience since 2019, primarily front-end development (particularly iOS and web), but I’m also adventuring into backend work. I spent 7+ years working in radio, graphic design, and videography, where I picked up a wide range of skills. I'll be graduating from Ball State University in Fall 2023 with a Bachelor's in Media and a minor in CS. Sometime after which, I'd like to work towards a CS Master's. I'm upbeat, straightforward, and love rock climbing.",
+  "about": "I’m an ambitious, multifaceted, and tenacious developer. I've been building experience since 2019, primarily front-end development (particularly iOS and web), but I’m also adventuring into backend work. I spent 7+ years working in radio, graphic design, and videography, where I picked up a wide range of skills. I'll be graduating from Ball State University in Fall 2023, sometime after which I'd like to work towards a CS Master's. I'm upbeat, straightforward, and love rock climbing.",
   "projects": [
     { "username": "bkeys818", "repo": "spotify-tools" },
     { "username": "bkeys818", "repo": "CardCarousel" },
@@ -30,6 +30,11 @@
           "title": "CSS3",
           "slug": "css3",
           "href": "https://www.w3.org/style/css/overview"
+        },
+        {
+          "title": "Python",
+          "slug": "python",
+          "href": "https://www.python.org"
         },
         {
           "title": "Bash",
