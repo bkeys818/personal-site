@@ -10,7 +10,6 @@
     {
       "title": "languages",
       "icons": [
-        { "title": "Swift", "slug": "swift", "href": "https://www.swift.org" },
         {
           "title": "Javascript",
           "slug": "javascript",
@@ -31,6 +30,8 @@
           "slug": "css3",
           "href": "https://www.w3.org/style/css/overview"
         },
+        { "title": "Swift", "slug": "swift", "href": "https://www.swift.org" },
+        { "title": "Java", "fileName": "java", "href": "https://dev.java" },
         {
           "title": "Python",
           "slug": "python",
