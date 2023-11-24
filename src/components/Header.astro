@@ -10,7 +10,7 @@ import HamburgerIcon from './HamburgerIcon.astro';
       <ul class="flex gap-6">
         {
           menu.map(link => (
-            <li>
+            <li class="hover-grow">
               <a href={link.href}>{link.name.toUpperCase()}</a>
             </li>
           ))
