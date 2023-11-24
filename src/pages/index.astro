@@ -20,7 +20,7 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
         {
           projects.map(({ username, repo }) => (
             <a
-              class="duration-100 ease-in-out hover:scale-[102%]"
+              class="hover-grow hover:scale-[102%]"
               href={`https://github.com/${username}/${repo}`}
             >
               <img
@@ -46,7 +46,7 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
                 <a
                   title={title}
                   href={href}
-                  class="p-1 duration-100 ease-in-out hover:scale-105"
+                  class="p-1 hover-grow"
                 >
                   <img
                     height="48"
@@ -71,7 +71,7 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
               for={'softSkill' + id}
               class="cursor-pointer p-2 text-center"
             >
-              <h3 class="inline font-normal">{title}</h3>
+              <h3 class="inline-block mb-0 font-normal hover-grow">{title}</h3>
             </label>
             <input
               type="checkbox"

@@ -186,3 +186,7 @@
 .astro-code {
   @apply rounded-md py-4 pl-5 pr-7 text-sm shadow-md;
 }
+
+.hover-grow {
+  @apply duration-100 ease-in-out hover:scale-105;
+}
