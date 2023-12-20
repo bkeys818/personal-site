@@ -43,14 +43,15 @@ const staticTitleLength = staticTitle.length
 </style>
 
 <script>
-  const labels = ['Ben Keys', 'a Freelancer', 'a Developer', 'a Rock Climber']
+  import { titles } from '@data/portfolio.json'
+
   const $element: HTMLElement = document.querySelector('#typing-title')!
   const $title = $element.querySelector("h1")!
 
   let i = 0
-  const n = labels.length
+  const n = titles.length
   function changeTitle() {
-    const title = "Hi, I'm " + labels[(i % n + n) % n]
+    const title = "Hi, I'm " + titles[(i % n + n) % n]
     $title.textContent = title
     $element.style.setProperty('--titleLength', title.length.toString())
     i++
