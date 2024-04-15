@@ -5,7 +5,7 @@ const staticTitleLength = staticTitle.length
 
 <div id="typing-title" class="grid place-items-center">
   <div>
-    <h1 class="text-xl sm:text-4xl mb-0">{staticTitle + "Ben Keys"}</h1>
+    <h1 class="mb-0 text-xl sm:text-4xl">{staticTitle + 'Ben Keys'}</h1>
   </div>
 </div>
 <noscript>
@@ -23,7 +23,9 @@ const staticTitleLength = staticTitle.length
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
-    animation: typing 5s steps(calc(var(--titleLength) - var(--staticTitleLength)), start) infinite alternate;
+    animation: typing 5s
+      steps(calc(var(--titleLength) - var(--staticTitleLength)), start) infinite
+      alternate;
   }
 
   @keyframes typing {
@@ -46,22 +48,22 @@ const staticTitleLength = staticTitle.length
   import { titles } from '@data/portfolio.json'
 
   const $element: HTMLElement = document.querySelector('#typing-title')!
-  const $title = $element.querySelector("h1")!
+  const $title = $element.querySelector('h1')!
 
   let i = 0
   const n = titles.length
   function changeTitle() {
-    const title = "Hi, I'm " + titles[(i % n + n) % n]
+    const title = "Hi, I'm " + titles[((i % n) + n) % n]
     $title.textContent = title
     $element.style.setProperty('--titleLength', title.length.toString())
     i++
   }
 
   changeTitle()
-  $title.addEventListener("animationiteration", (event) => {
+  $title.addEventListener('animationiteration', event => {
     // Uses animation duration to only run every other time
     if (event.elapsedTime % 10 == 5) {
       changeTitle()
     }
-  });
+  })
 </script>

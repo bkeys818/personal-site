@@ -5,10 +5,10 @@ desc: A walk through on how the differen't methods of a binary tree.
 date: 2023-05-10
 tag: programming
 img:
-    src: /images/binary_tree.png
-    alt: binary tree
-    contain: true
-    bgColor: 'radial-gradient(circle, rgb(63, 76, 107) 0%, rgb(96, 108, 136) 100%)'
+  src: /images/binary_tree.png
+  alt: binary tree
+  contain: true
+  bgColor: 'radial-gradient(circle, rgb(63, 76, 107) 0%, rgb(96, 108, 136) 100%)'
 ---
 
 ## Insertion

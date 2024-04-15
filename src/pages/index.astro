@@ -13,7 +13,7 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
     <TypingTitle />
 
     <div class="text-lg md:m-auto md:max-w-3xl" set:html={about} />
-    
+
     <section>
       <h2>Projects</h2>
       <div class="my-0-all flex flex-wrap justify-center gap-x-4 gap-y-3">
@@ -43,15 +43,15 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
             <h4>{title.toUpperCase()}</h4>
             <div class="flex flex-wrap justify-center gap-x-3 gap-y-2">
               {icons.map(({ title, href, slug, fileName }) => (
-                <a
-                  title={title}
-                  href={href}
-                  class="p-1 hover-grow"
-                >
+                <a title={title} href={href} class="hover-grow p-1">
                   <img
                     height="48"
                     width="48"
-                    src={fileName ? `/icons/${fileName}.svg` : `https://cdn.simpleicons.org/${slug}`}
+                    src={
+                      fileName
+                        ? `/icons/${fileName}.svg`
+                        : `https://cdn.simpleicons.org/${slug}`
+                    }
                     alt={fileName ?? slug + ' icon'}
                   />
                 </a>
@@ -71,7 +71,7 @@ import { about, projects, hardSkills, softSkills } from '@data/portfolio.json'
               for={'softSkill' + id}
               class="cursor-pointer p-2 text-center"
             >
-              <h3 class="inline-block mb-0 font-normal hover-grow">{title}</h3>
+              <h3 class="hover-grow mb-0 inline-block font-normal">{title}</h3>
             </label>
             <input
               type="checkbox"

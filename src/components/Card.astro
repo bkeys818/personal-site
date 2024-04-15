@@ -15,35 +15,35 @@ interface Props {
 
 const { title, desc, date, tag, href, img } = Astro.props
 ---
-  
+
 <a
-    class="col-span-12 flex flex-col bg-secondary shadow-md sm:col-span-6 lg:col-span-4 hover-grow hover:scale-[102%]"
-    href={href}
-  >
-    <img
-      src={img.src}
-      alt={img.alt}
-      class={`m-0 h-60 w-full ${img.contain ? 'object-contain' : 'object-cover'}`}
-      style={img.bgColor ? 'background: ' + img.bgColor : undefined}
-    />
-    <div class="grow m-3">
-      {
-        date && (
-          <div class="flex items-center">
-            <h6>{date && date.toLocaleDateString()}</h6>
-            {tag && <h6 class="grow text-right">#{tag}</h6>}
-          </div>
-        )
-      }
-      <h3 class="my-2">{title}</h3>
-      {desc && <p class="truncate-multiline-4 m-0">{desc}</p>}
-    </div>
+  class="hover-grow col-span-12 flex flex-col bg-secondary shadow-md hover:scale-[102%] sm:col-span-6 lg:col-span-4"
+  href={href}
+>
+  <img
+    src={img.src}
+    alt={img.alt}
+    class={`m-0 h-60 w-full ${img.contain ? 'object-contain' : 'object-cover'}`}
+    style={img.bgColor ? 'background: ' + img.bgColor : undefined}
+  />
+  <div class="m-3 grow">
     {
       date && (
-        <div class="border-t-secondary flex items-center border-t-[1px] px-2 py-3 my-0-all">
-          <p class="grow">Read Article</p>
-          <p>-&gt;</p>
+        <div class="flex items-center">
+          <h6>{date && date.toLocaleDateString()}</h6>
+          {tag && <h6 class="grow text-right">#{tag}</h6>}
         </div>
       )
     }
+    <h3 class="my-2">{title}</h3>
+    {desc && <p class="truncate-multiline-4 m-0">{desc}</p>}
+  </div>
+  {
+    date && (
+      <div class="my-0-all flex items-center border-t-[1px] border-t-secondary px-2 py-3">
+        <p class="grow">Read Article</p>
+        <p>-&gt;</p>
+      </div>
+    )
+  }
 </a>

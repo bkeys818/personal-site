@@ -1,6 +1,6 @@
 ---
 import { menu, socials } from '@data/links.json'
-import HamburgerIcon from './HamburgerIcon.astro';
+import HamburgerIcon from './HamburgerIcon.astro'
 ---
 
 <header>
@@ -26,14 +26,14 @@ import HamburgerIcon from './HamburgerIcon.astro';
         ))
       }
     </div>
-    <HamburgerIcon size={32}/>
+    <HamburgerIcon size={32} />
   </div>
 </header>
 <dialog
   id="headerModal"
   class="invisible fixed left-0 top-0 h-full w-full bg-primary p-4 opacity-0 transition-opacity duration-200 open:visible open:opacity-100"
 >
-  <div class="flex flex-col gap-4 h-full mt-0">
+  <div class="mt-0 flex h-full flex-col gap-4">
     <form method="dialog">
       <button class="float-right">
         <HamburgerIcon size={32} />

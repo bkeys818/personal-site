@@ -5,9 +5,9 @@ desc: An explination of what linked list are, how they work, and when to use the
 date: 2023-04-15
 tag: programming
 img:
-    src: /images/linked_list_cover.png
-    alt: linked list
-    bgColor: fff
+  src: /images/linked_list_cover.png
+  alt: linked list
+  bgColor: fff
 ---
 
 ![linked list](/images/linked_list.png)

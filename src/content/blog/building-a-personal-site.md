@@ -5,8 +5,8 @@ desc: After years of putting it off, I finally made a personal site. This the pr
 date: 2023-04-04
 tag: programming
 img:
-    src: /images/wires-growing-from-tree.png
-    alt: tree with wires growing out of it
+  src: /images/wires-growing-from-tree.png
+  alt: tree with wires growing out of it
 ---
 
 After years of putting it off, I decided it was finally time to build myself a personal site. Here’s my process.

@@ -11,7 +11,7 @@ export const collections = {
         src: z.string(),
         alt: z.string().optional(),
         bgColor: z.string().optional(),
-        contain: z.boolean().optional()
+        contain: z.boolean().optional(),
       }),
     }),
   }),

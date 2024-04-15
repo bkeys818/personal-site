@@ -5,13 +5,13 @@ desc: Contemplating the state of AI while meal preping.
 date: 2023-04-18
 tag: tech
 img:
-    src: /images/ChatGPT_logo.png
-    alt: linked list
-    contain: true
-    bgColor: '#74ac9e'
+  src: /images/ChatGPT_logo.png
+  alt: linked list
+  contain: true
+  bgColor: '#74ac9e'
 ---
 
-*Disclaimer - ChatGPT was used to improve the writing in the following article, but no changes to the content were made.*
+_Disclaimer - ChatGPT was used to improve the writing in the following article, but no changes to the content were made._
 
 Artificial intelligence (AI) is having a moment, and it’s anything but a fad. However, in my opinion, the technology we have right now isn’t all that impressive on its own. But used as a tool to work alongside you, it can be incredibly beneficial. If we start seeing professionals pushed out of the workforce, it won’t be by AI alone but by those who learn to use it in their workflow. That’s why I’m trying to integrate AI tools like Chat GPT more into my life.
 
