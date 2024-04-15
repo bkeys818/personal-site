@@ -1,6 +1,6 @@
 {
   "titles": ["Ben Keys", "a Developer", "a Consultant", "a Rock Climber"],
-  "about": "I’m an ambitious, multifaceted, and tenacious developer. I've been building experience since 2019, primarily front-end development (particularly iOS and web), but I’m also adventuring into backend work. I spent 7+ years working in radio, graphic design, and videography, where I picked up a wide range of skills. I'll be graduating from Ball State University in Fall 2023, sometime after which I'd like to work towards a CS Master's. I'm upbeat and straightforward, and I love rock climbing.",
+  "about": "<p>I'm an ambitious, multifaceted, and tenacious developer. I've been building experience since 2019, primarily front-end development (particularly iOS and web), but I'm also venturing into backend work. I spent 7+ years working in radio, graphic design, and videography, where I picked up a wide range of skills. I graduated from Ball State University in Fall 2023 and am looking for new opportunities to learn more every day.</p><p>After hours, you can find me rock climbing. I'm in love with both the sport and the community. I've been climbing indoors for six years, outdoors for two years, and now I'm learning to trad climb. I'm always looking for other climbers (or soon-to-be climbers) to adventure with!</p>",
   "projects": [
     { "username": "bkeys818", "repo": "spotify-tools" },
     { "username": "bkeys818", "repo": "CardCarousel" },
