@@ -6,3 +6,9 @@ updates:
       interval: 'weekly'
     commit-message:
       prefix: '⬆️ '
+    groups:
+      version-updates:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
