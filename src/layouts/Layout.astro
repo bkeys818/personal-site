@@ -19,6 +19,21 @@ const { title, desc } = Astro.props
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/icons/favicon-48x48.png"
+      sizes="48x48"
+    />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Ben Keys" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
     <title>{title}</title>
     {desc && <meta name="description" content={desc} />}
   </head>
