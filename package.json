@@ -12,7 +12,7 @@
     "eslint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.4",
+    "@astrojs/tailwind": "^6.0.0",
     "astro": "^5.2.3",
     "tailwindcss": "^3.4.17"
   },
