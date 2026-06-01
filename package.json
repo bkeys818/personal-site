@@ -21,16 +21,16 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
-    "autoprefixer": "^10.4.24",
+    "autoprefixer": "^10.5.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-astro": "^1.5.0",
+    "eslint-plugin-astro": "^1.7.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "postcss": "^8.5.14",
-    "prettier": "^3.8.1",
+    "postcss": "^8.5.15",
+    "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.7.2",
+    "prettier-plugin-tailwindcss": "^0.8.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.54.0"
+    "typescript-eslint": "^8.60.1"
   }
 }
