@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: Building a Personal Site
 desc: After years of putting it off, I finally made a personal site. This the process and the tools I used to build it.
 date: 2023-04-04

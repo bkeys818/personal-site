@@ -19,5 +19,6 @@
       "description": "Add or update blog post(s)",
       "emoji": "📙"
     }
-  ]
+  ],
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
 }

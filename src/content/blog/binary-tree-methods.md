@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: Binary Tree Methods
 desc: A walk through on how the differen't methods of a binary tree.
 date: 2023-05-10

@@ -17,7 +17,7 @@ const { title, desc, date, tag, href, img } = Astro.props
 ---
 
 <a
-  class="hover-grow col-span-12 flex flex-col bg-secondary shadow-md hover:scale-[102%] sm:col-span-6 lg:col-span-4"
+  class="hover-grow bg-surface-muted col-span-12 flex flex-col shadow-md hover:scale-[102%] sm:col-span-6 lg:col-span-4"
   href={href}
 >
   <img
@@ -40,7 +40,7 @@ const { title, desc, date, tag, href, img } = Astro.props
   </div>
   {
     date && (
-      <div class="my-0-all flex items-center border-t-[1px] border-t-secondary px-2 py-3">
+      <div class="my-0-all border-t-secondary flex items-center border-t-[1px] px-2 py-3">
         <p class="grow">Read Article</p>
         <p>-&gt;</p>
       </div>

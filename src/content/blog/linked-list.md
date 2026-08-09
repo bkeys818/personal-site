@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: Linear Data Structures - Linked List
 desc: An explination of what linked list are, how they work, and when to use them.
 date: 2023-04-15
