@@ -22,13 +22,13 @@
           "href": "https://www.typescriptlang.org"
         },
         {
-          "title": "HTML5",
+          "title": "HTML",
           "slug": "html5",
           "href": "https://html.spec.whatwg.org/multipage/"
         },
         {
-          "title": "CSS3",
-          "slug": "css3",
+          "title": "CSS",
+          "slug": "css",
           "href": "https://www.w3.org/style/css/overview"
         },
         { "title": "Swift", "slug": "swift", "href": "https://www.swift.org" },

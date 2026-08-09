@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: Meal Preping with ChatGPT
 desc: Contemplating the state of AI while meal preping.
 date: 2023-04-18
