@@ -1,11 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #0c120f;
+  --color-secondary: #333333;
+
+  --color-surface: #fafbfc;
+  --color-surface-muted: #f2f3f5;
+
+  --color-blue-50: #eff6fa;
+  --color-blue-100: #dceefa;
+  --color-blue-200: #92aabc;
+  --color-blue-300: #55788f;
+  --color-blue-400: #284c63;
+  --color-blue-500: #0c2636;
+
+  --color-green-100: #c7e7a6;
+  --color-green-200: #92ba69;
+  --color-green-300: #638d3a;
+  --color-green-400: #3c6018;
+  --color-green-500: #1c3305;
+
+  --color-aqua-100: #58e2c8;
+  --color-aqua-200: #45b19f;
+  --color-aqua-300: #328073;
+  --color-aqua-400: #1f4f47;
+  --color-aqua-500: #0c1e1b;
+}
 
 @layer base {
   body {
-    @apply bg-primary text-primary;
+    @apply bg-surface text-primary;
     font-family: 'Poppins', sans-serif;
     &::before {
       content: '';
@@ -17,16 +42,16 @@
       bottom: 0;
       z-index: -999;
       background-image: linear-gradient(
-        theme(colors.blue.100),
-        theme(colors.blue.50) 15vh,
-        theme(backgroundColor.primary)
+        var(--color-blue-100),
+        var(--color-blue-50) 15vh,
+        var(--color-surface)
       );
     }
   }
 
   /* #region ***** Typography *****/
   blockquote {
-    @apply ml-2 border-l-4 border-blue-400 bg-secondary px-3 py-2 italic;
+    @apply bg-surface-muted ml-2 border-l-4 border-blue-400 px-3 py-2 italic;
   }
   h1 {
     @apply text-center;
@@ -50,7 +75,7 @@
     @apply text-xl;
   }
   h5 {
-    @apply text-base font-semibold text-secondary;
+    @apply text-secondary text-base font-semibold;
   }
   h6 {
     @apply text-sm font-light;
@@ -98,16 +123,16 @@
 
   h1,
   h2 {
-    @apply mb-6 mt-10;
+    @apply mt-10 mb-6;
   }
   h3 {
-    @apply mb-4 mt-6;
+    @apply mt-6 mb-4;
   }
   h4 {
-    @apply mb-2 mt-4;
+    @apply mt-4 mb-2;
   }
   h5 {
-    @apply mb-1 mt-2;
+    @apply mt-2 mb-1;
   }
   h1,
   h2,
@@ -136,7 +161,7 @@
   }
   p a {
     @apply underline;
-    color: theme(colors.blue.400);
+    color: var(--color-blue-400);
   }
   /* #endregion */
 }
@@ -146,7 +171,7 @@
     @apply mx-auto max-w-5xl px-4 sm:px-6 lg:px-8;
   }
   .modal {
-    @apply invisible fixed left-0 top-0 z-50 h-full w-full overflow-auto opacity-0 transition-opacity duration-200;
+    @apply invisible fixed top-0 left-0 z-50 h-full w-full overflow-auto opacity-0 transition-opacity duration-200;
   }
   span.vertical-divider {
     @apply px-1;
@@ -184,7 +209,7 @@
 }
 
 .astro-code {
-  @apply rounded-md py-4 pl-5 pr-7 text-sm shadow-md;
+  @apply rounded-md py-4 pr-7 pl-5 text-sm shadow-md;
 }
 
 .hover-grow {

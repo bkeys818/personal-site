@@ -27,6 +27,7 @@ This is a personal portfolio and blog site built with **Astro 5** (static site g
 **Interactivity**: Minimal JavaScript. The mobile menu uses a native `<dialog>` element; the soft skills expand/collapse uses a CSS checkbox hack — no JS frameworks for UI state.
 
 **TypeScript path aliases** (defined in `tsconfig.json`):
+
 - `@components/*` → `src/components/*`
 - `@layouts/*` → `src/layouts/*`
 - `@styles/*` → `src/styles/*`
