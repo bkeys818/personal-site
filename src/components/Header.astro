@@ -1,5 +1,6 @@
 ---
-import { menu, socials } from '@data/links.json'
+import { menu } from '@data/site.json'
+import { socials } from '@data/profile'
 import HamburgerIcon from './HamburgerIcon.astro'
 ---
 
@@ -19,9 +20,13 @@ import HamburgerIcon from './HamburgerIcon.astro'
     </nav>
     <div class="hidden gap-4 sm:flex">
       {
-        socials.map(({ src, href, alt }) => (
+        socials.map(({ name, label, href }) => (
           <a href={href}>
-            <img class="icon" src={src} alt={alt} />
+            <img
+              class="icon"
+              src={`/icons/${name}.svg`}
+              alt={`${label} logo`}
+            />
           </a>
         ))
       }
@@ -53,9 +58,13 @@ import HamburgerIcon from './HamburgerIcon.astro'
     </nav>
     <div class="flex justify-center gap-4">
       {
-        socials.map(({ src, href, alt }) => (
+        socials.map(({ name, label, href }) => (
           <a href={href}>
-            <img class="icon" src={src} alt={alt} />
+            <img
+              class="icon"
+              src={`/icons/${name}.svg`}
+              alt={`${label} logo`}
+            />
           </a>
         ))
       }

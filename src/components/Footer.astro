@@ -1,13 +1,13 @@
 ---
-import { socials } from '@data/links.json'
+import { socials } from '@data/profile'
 ---
 
 <footer class="page-width my-0-all !mt-auto py-16 text-center">
   <div class="flex items-center justify-center gap-4 pb-10">
     {
-      socials.map(({ src, href, alt }) => (
+      socials.map(({ name, label, href }) => (
         <a href={href}>
-          <img class="icon" src={src} alt={alt} />
+          <img class="icon" src={`/icons/${name}.svg`} alt={`${label} logo`} />
         </a>
       ))
     }

@@ -20,7 +20,11 @@ This is a personal portfolio and blog site built with **Astro 5** (static site g
 
 **Routing**: File-based via `src/pages/`. Blog posts are dynamically routed through `src/pages/blog/[...slug].astro` using Astro Content Collections — Markdown files in `src/content/blog/` are auto-discovered.
 
-**Data**: Site content (projects, skills, nav links) is stored in JSON files under `src/data/` and imported at build time, not fetched at runtime.
+**Data**: Content lives in `src/data/`, split by whether it is shared with the GitHub profile README:
+
+- `profile.ts` — socials, projects, and skills, **fetched at build time** from `data/profile.json` in [bkeys818/bkeys818](https://github.com/bkeys818/bkeys818), which is the source of truth. Editing it there re-renders that README and pings a Netlify build hook to rebuild this site. Because the module fetches, it is build-time only — never import it from a client `<script>`.
+- `site.json` — content this site owns alone: nav menu, typing-animation titles, and the about copy.
+- `projects.json` — the richer cards for `/projects`, separate from the shared project list.
 
 **Layouts**: `src/layouts/Layout.astro` wraps every page with the header and footer. `BlogPost.astro` extends it for blog content.
 
