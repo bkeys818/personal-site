@@ -17,7 +17,7 @@
  */
 const SOURCE =
   process.env.PROFILE_DATA_URL ??
-  'https://raw.githubusercontent.com/bkeys818/bkeys818/master/data/profile.json'
+  'https://raw.githubusercontent.com/bkeys818/bkeys818/main/data/profile.json'
 
 export interface Social {
   /** Doubles as the icon basename: `/icons/{name}.svg`. */
